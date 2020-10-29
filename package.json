@@ -1,0 +1,25 @@
+{
+  "name": "homeworks",
+  "version": "1.0.0",
+  "description": "homeworks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/study-17-09/homeworks.git"
+  },
+  "keywords": [
+    "homework",
+    "homeworks",
+    "home",
+    "task"
+  ],
+  "author": "froz-ferre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/study-17-09/homeworks/issues"
+  },
+  "homepage": "https://github.com/study-17-09/homeworks#readme"
+}

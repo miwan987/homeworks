@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Architects Daughter', cursive;
+}
+
+header {
+    background: #100D1D url("./../assets/img/header_bg.jpeg") center center/cover no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+main {
+    width: 80%;
+    margin: 40px auto;
+}
+
+.card__flipped {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+
+.card__flipped:hover {
+    perspective: 600px;
+}
+
+.card__flipped .card__flipped--front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: #100D1D;
+    transform: rotateX(0deg);
+    transform-origin: bottom;
+    transition: 0.7s;
+    z-index: 1;
+}
+
+.card__flipped:hover .card__flipped--front {
+    transform: translateY(-100%) rotateX(90deg);
+}
+
+.card__flipped .card__flipped--back {
+    position: absolute;
+    padding: 20px;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #100D1D;
+    backface-visibility: hidden;
+    transform-origin: top;
+    transform: translateY(100%) rotateX(90deg);
+    transition: .7s;
+}
+
+.card__flipped:hover .card__flipped--back {
+    transform: translateY(0) rotateX(0deg);
+}
+
+.card-content {
+    width: 100%;
+    height: 100%;
+}
+
+.card-content .about {
+    height: 80%;
+    overflow: auto;
+}
+
+.card-content .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 20%;
+}
+
+.card-content .links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.card-content .links a:hover {
+    background-color: rgba(255, 255, 255, .2);
+    transition: .8s;
+}
+
+.avatar {
+    width: 100%;
+    height: 90%;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+}
+
+.student-name {
+    margin: 10px;
+}
+
+.description {
+    margin-bottom: 40px;
+}
+
+.students {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1024px;
+    margin: 0 auto;
+}
